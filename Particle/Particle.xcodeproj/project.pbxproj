@@ -1,0 +1,511 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		96C5D84D1B2D6CB10087146C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D84C1B2D6CB10087146C /* AppDelegate.m */; };
+		96C5D84F1B2D6CB10087146C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D84E1B2D6CB10087146C /* main.m */; };
+		96C5D8521B2D6CB10087146C /* PTGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D8511B2D6CB10087146C /* PTGameView.m */; };
+		96C5D8551B2D6CB10087146C /* PTGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D8541B2D6CB10087146C /* PTGameViewController.m */; };
+		96C5D8591B2D6CB20087146C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96C5D8581B2D6CB20087146C /* Images.xcassets */; };
+		96C5D85C1B2D6CB20087146C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96C5D85A1B2D6CB20087146C /* MainMenu.xib */; };
+		96C5D8681B2D6CB20087146C /* ParticleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D8671B2D6CB20087146C /* ParticleTests.m */; };
+		96C5D8781B2E19930087146C /* emitters.scnp in Resources */ = {isa = PBXBuildFile; fileRef = 96C5D8761B2E19930087146C /* emitters.scnp */; };
+		96C5D8791B2E19930087146C /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C5D8771B2E19930087146C /* bokeh.png */; };
+		96C9DC6B1B2E236200D887A2 /* LeapObjectiveC.mm in Sources */ = {isa = PBXBuildFile; fileRef = 96C9DC6A1B2E236200D887A2 /* LeapObjectiveC.mm */; };
+		96C9DC6F1B2E23B200D887A2 /* libLeap.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C9DC6E1B2E23B200D887A2 /* libLeap.dylib */; };
+		96C9DC711B2E23D700D887A2 /* libLeap.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96C9DC6E1B2E23B200D887A2 /* libLeap.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		96C9DC791B2E85B100D887A2 /* PTHandNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C9DC781B2E85B100D887A2 /* PTHandNode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96C5D8621B2D6CB20087146C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96C5D83E1B2D6CB10087146C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96C5D8451B2D6CB10087146C;
+			remoteInfo = Particle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96C9DC701B2E23C700D887A2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				96C9DC711B2E23D700D887A2 /* libLeap.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		96C5D8461B2D6CB10087146C /* Particle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Particle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C5D84A1B2D6CB10087146C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C5D84B1B2D6CB10087146C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		96C5D84C1B2D6CB10087146C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96C5D84E1B2D6CB10087146C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		96C5D8501B2D6CB10087146C /* PTGameView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGameView.h; sourceTree = "<group>"; };
+		96C5D8511B2D6CB10087146C /* PTGameView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGameView.m; sourceTree = "<group>"; };
+		96C5D8531B2D6CB10087146C /* PTGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTGameViewController.h; sourceTree = "<group>"; };
+		96C5D8541B2D6CB10087146C /* PTGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTGameViewController.m; sourceTree = "<group>"; };
+		96C5D8581B2D6CB20087146C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Particle/Images.xcassets; sourceTree = "<group>"; };
+		96C5D85B1B2D6CB20087146C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		96C5D8611B2D6CB20087146C /* ParticleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParticleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96C5D8661B2D6CB20087146C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96C5D8671B2D6CB20087146C /* ParticleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ParticleTests.m; sourceTree = "<group>"; };
+		96C5D8761B2E19930087146C /* emitters.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = emitters.scnp; sourceTree = "<group>"; };
+		96C5D8771B2E19930087146C /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bokeh.png; sourceTree = "<group>"; };
+		96C9DC691B2E236200D887A2 /* LeapObjectiveC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeapObjectiveC.h; sourceTree = "<group>"; };
+		96C9DC6A1B2E236200D887A2 /* LeapObjectiveC.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LeapObjectiveC.mm; sourceTree = "<group>"; };
+		96C9DC6C1B2E236D00D887A2 /* Leap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leap.h; sourceTree = "<group>"; };
+		96C9DC6D1B2E237500D887A2 /* LeapMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeapMath.h; sourceTree = "<group>"; };
+		96C9DC6E1B2E23B200D887A2 /* libLeap.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libLeap.dylib; sourceTree = "<group>"; };
+		96C9DC771B2E85B100D887A2 /* PTHandNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTHandNode.h; sourceTree = "<group>"; };
+		96C9DC781B2E85B100D887A2 /* PTHandNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTHandNode.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		96C5D8431B2D6CB10087146C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C9DC6F1B2E23B200D887A2 /* libLeap.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C5D85E1B2D6CB20087146C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		96C5D83D1B2D6CB10087146C = {
+			isa = PBXGroup;
+			children = (
+				96C5D8481B2D6CB10087146C /* Particle */,
+				96C5D8751B2E19260087146C /* Resources */,
+				96C9DC721B2E248800D887A2 /* Frameworks */,
+				96C5D8641B2D6CB20087146C /* ParticleTests */,
+				96C5D8471B2D6CB10087146C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		96C5D8471B2D6CB10087146C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				96C5D8461B2D6CB10087146C /* Particle.app */,
+				96C5D8611B2D6CB20087146C /* ParticleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		96C5D8481B2D6CB10087146C /* Particle */ = {
+			isa = PBXGroup;
+			children = (
+				96C5D84B1B2D6CB10087146C /* AppDelegate.h */,
+				96C5D84C1B2D6CB10087146C /* AppDelegate.m */,
+				96C5D8501B2D6CB10087146C /* PTGameView.h */,
+				96C5D8511B2D6CB10087146C /* PTGameView.m */,
+				96C5D8531B2D6CB10087146C /* PTGameViewController.h */,
+				96C5D8541B2D6CB10087146C /* PTGameViewController.m */,
+				96C9DC771B2E85B100D887A2 /* PTHandNode.h */,
+				96C9DC781B2E85B100D887A2 /* PTHandNode.m */,
+				96C5D85A1B2D6CB20087146C /* MainMenu.xib */,
+				96C9DC681B2E233600D887A2 /* Leap Motion */,
+				96C5D8491B2D6CB10087146C /* Supporting Files */,
+			);
+			path = Particle;
+			sourceTree = "<group>";
+		};
+		96C5D8491B2D6CB10087146C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96C5D84A1B2D6CB10087146C /* Info.plist */,
+				96C5D84E1B2D6CB10087146C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96C5D8641B2D6CB20087146C /* ParticleTests */ = {
+			isa = PBXGroup;
+			children = (
+				96C5D8671B2D6CB20087146C /* ParticleTests.m */,
+				96C5D8651B2D6CB20087146C /* Supporting Files */,
+			);
+			path = ParticleTests;
+			sourceTree = "<group>";
+		};
+		96C5D8651B2D6CB20087146C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96C5D8661B2D6CB20087146C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		96C5D8751B2E19260087146C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96C9DC761B2E2A6100D887A2 /* Sounds */,
+				96C5D8581B2D6CB20087146C /* Images.xcassets */,
+				96C5D8761B2E19930087146C /* emitters.scnp */,
+				96C5D8771B2E19930087146C /* bokeh.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		96C9DC681B2E233600D887A2 /* Leap Motion */ = {
+			isa = PBXGroup;
+			children = (
+				96C9DC6C1B2E236D00D887A2 /* Leap.h */,
+				96C9DC6D1B2E237500D887A2 /* LeapMath.h */,
+				96C9DC691B2E236200D887A2 /* LeapObjectiveC.h */,
+				96C9DC6A1B2E236200D887A2 /* LeapObjectiveC.mm */,
+			);
+			name = "Leap Motion";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		96C9DC721B2E248800D887A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96C9DC6E1B2E23B200D887A2 /* libLeap.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		96C9DC761B2E2A6100D887A2 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		96C5D8451B2D6CB10087146C /* Particle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C5D86B1B2D6CB20087146C /* Build configuration list for PBXNativeTarget "Particle" */;
+			buildPhases = (
+				96C5D8421B2D6CB10087146C /* Sources */,
+				96C5D8431B2D6CB10087146C /* Frameworks */,
+				96C5D8441B2D6CB10087146C /* Resources */,
+				96C9DC701B2E23C700D887A2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Particle;
+			productName = Particle;
+			productReference = 96C5D8461B2D6CB10087146C /* Particle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		96C5D8601B2D6CB20087146C /* ParticleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96C5D86E1B2D6CB20087146C /* Build configuration list for PBXNativeTarget "ParticleTests" */;
+			buildPhases = (
+				96C5D85D1B2D6CB20087146C /* Sources */,
+				96C5D85E1B2D6CB20087146C /* Frameworks */,
+				96C5D85F1B2D6CB20087146C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96C5D8631B2D6CB20087146C /* PBXTargetDependency */,
+			);
+			name = ParticleTests;
+			productName = ParticleTests;
+			productReference = 96C5D8611B2D6CB20087146C /* ParticleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		96C5D83E1B2D6CB10087146C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Veronica Zheng";
+				TargetAttributes = {
+					96C5D8451B2D6CB10087146C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					96C5D8601B2D6CB20087146C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 96C5D8451B2D6CB10087146C;
+					};
+				};
+			};
+			buildConfigurationList = 96C5D8411B2D6CB10087146C /* Build configuration list for PBXProject "Particle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 96C5D83D1B2D6CB10087146C;
+			productRefGroup = 96C5D8471B2D6CB10087146C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				96C5D8451B2D6CB10087146C /* Particle */,
+				96C5D8601B2D6CB20087146C /* ParticleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96C5D8441B2D6CB10087146C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C5D8791B2E19930087146C /* bokeh.png in Resources */,
+				96C5D8781B2E19930087146C /* emitters.scnp in Resources */,
+				96C5D8591B2D6CB20087146C /* Images.xcassets in Resources */,
+				96C5D85C1B2D6CB20087146C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C5D85F1B2D6CB20087146C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		96C5D8421B2D6CB10087146C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C5D8551B2D6CB10087146C /* PTGameViewController.m in Sources */,
+				96C5D8521B2D6CB10087146C /* PTGameView.m in Sources */,
+				96C9DC6B1B2E236200D887A2 /* LeapObjectiveC.mm in Sources */,
+				96C5D84F1B2D6CB10087146C /* main.m in Sources */,
+				96C9DC791B2E85B100D887A2 /* PTHandNode.m in Sources */,
+				96C5D84D1B2D6CB10087146C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C5D85D1B2D6CB20087146C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96C5D8681B2D6CB20087146C /* ParticleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96C5D8631B2D6CB20087146C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96C5D8451B2D6CB10087146C /* Particle */;
+			targetProxy = 96C5D8621B2D6CB20087146C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		96C5D85A1B2D6CB20087146C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				96C5D85B1B2D6CB20087146C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		96C5D8691B2D6CB20087146C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		96C5D86A1B2D6CB20087146C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		96C5D86C1B2D6CB20087146C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Particle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		96C5D86D1B2D6CB20087146C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Particle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		96C5D86F1B2D6CB20087146C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParticleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Particle.app/Contents/MacOS/Particle";
+			};
+			name = Debug;
+		};
+		96C5D8701B2D6CB20087146C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ParticleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Particle.app/Contents/MacOS/Particle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96C5D8411B2D6CB10087146C /* Build configuration list for PBXProject "Particle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C5D8691B2D6CB20087146C /* Debug */,
+				96C5D86A1B2D6CB20087146C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C5D86B1B2D6CB20087146C /* Build configuration list for PBXNativeTarget "Particle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C5D86C1B2D6CB20087146C /* Debug */,
+				96C5D86D1B2D6CB20087146C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96C5D86E1B2D6CB20087146C /* Build configuration list for PBXNativeTarget "ParticleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96C5D86F1B2D6CB20087146C /* Debug */,
+				96C5D8701B2D6CB20087146C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 96C5D83E1B2D6CB10087146C /* Project object */;
+}
